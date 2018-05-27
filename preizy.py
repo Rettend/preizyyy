@@ -2,6 +2,11 @@ import discord, logging, json, asyncio, time, random, aiohttp, re, datetime, tra
 from discord.ext import commands
 
 bot = commands.Bot(command_prefix='>>', description=None)
+message = discord.Message
+server = discord.Server
+member = discord.Member
+user = discord.User
+permissions = discord.Permissions
 
 @bot.event
 async def on_ready():
@@ -66,5 +71,8 @@ async def nick(ctx, name):
     await bot.say(embed=em)
 
 
+    
+    
+    
 token = os.environ.get('DISCORD_TOKEN')
 bot.run(token)
