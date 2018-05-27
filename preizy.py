@@ -15,8 +15,8 @@ async def on_ready():
 async def ben(user):
     if user.name == bot.user.name:
         bot.say("I wont ben myself xd")
-	if user.name != bot.user.name:
-		bot.say(f"{ctx.message.author} banned {user.name}...")
+    if user.name != bot.user.name:
+        bot.say(f"{ctx.message.author} banned {user.name}...")
     
 @bot.event
 def on_message(message):
