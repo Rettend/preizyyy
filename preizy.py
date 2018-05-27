@@ -67,7 +67,7 @@ async def game(play):
 @bot.command(pass_context=True)
 async def nick(ctx, name):
     await bot.change_nickname(ctx.message.author, name)
-    em = discord.Embed(title="Nickname", description=f"{ctx.message.author}'s nick set to __{name}__!", colour0x95a5a6)
+    em = discord.Embed(title="Nickname", description=f"{ctx.message.author}'s nick set to __{name}__!", colour=0x95a5a6)
     await bot.say(embed=em)
 
 
