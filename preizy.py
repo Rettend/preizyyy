@@ -94,7 +94,9 @@ async def on_message(message):
         emb.set_footer(text='------------------------')
         await bot.send_message(message.channel, embed=emb)
     
-    
+    if message.content.startswith(">>ping"):
+        "Ping!"
+        await bot.send_message(message.channel, embed=emb)
     
 token = os.environ.get('DISCORD_TOKEN')
 bot.run(token)
