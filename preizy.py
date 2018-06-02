@@ -95,8 +95,9 @@ async def on_message(message):
         await bot.send_message(message.channel, embed=emb)
     
     if message.content.startswith(">>ping"):
+        emb2 = discord.Embed()
         "Ping!"
-        await bot.send_message(message.channel, embed=emb)
+        await bot.send_message(message.channel, embed=emb2)
     
 token = os.environ.get('DISCORD_TOKEN')
 bot.run(token)
