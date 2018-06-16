@@ -96,6 +96,7 @@ async def on_message(message):
     
     if message.content.startswith(">>ping"):
         emb2 = discord.Embed()
+        emb2.add_field()
         "Ping!"
         await bot.send_message(message.channel, embed=emb2)
     
