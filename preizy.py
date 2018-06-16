@@ -99,6 +99,6 @@ async def on_message(message):
         emb2.add_field()
         "Ping!"
         await bot.send_message(message.channel, embed=emb2)
-    
+    #rettend pls help how to make bot chat
 token = os.environ.get('DISCORD_TOKEN')
 bot.run(token)
