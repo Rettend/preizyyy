@@ -95,10 +95,12 @@ async def on_message(message):
         await bot.send_message(message.channel, embed=emb)
     
     if message.content.startswith(">>ping"):
-        emb2 = discord.Embed()
-        emb2.add_field()
-        "Ping!"
-        await bot.send_message(message.channel, embed=emb2)
-    #rettend pls help how to make bot chat
+        emb = discord.Embed(description="Ping")
+        await bot.send_message(message.channel, embed=emb)
+    await bot.process_commands(message) #IMPORTANT
+
+
+
+
 token = os.environ.get('DISCORD_TOKEN')
 bot.run(token)
